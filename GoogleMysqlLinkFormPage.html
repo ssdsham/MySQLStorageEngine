@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<form action="http://localhost/sham/GoogleMysqlLink.php" method="post">
+	
+	<b><u>Google Information:</u></b><br><br>
+	
+	<b>Google account, password, Spreadsheet Document Title, and Query Results to Upload are only required if uploading to Google Spreadsheets from MySQL.</b><br>
+	Google Account:             <input type="text" name="googleAccount"><br>
+	Password:                   <input type="password" name="googlePassword"><br>
+	Spreadsheet Document Title: <input type="text" name="spreadsheetName"><br>
+	Query Results to Upload (leaving blank defaults to select * from the table you provide below):<input type="text" width="45" name="queryToUpload"><br><br>
+
+	<b>CSV Feed only required if downloading from Google Spreadsheets to MySQL.</b><br>
+	Spreadsheet CSV Feed: <input type="text" name="csvFeed"><br>
+	
+	<br>
+	
+	<b><u>MySQL Information (always required):</u></b><br>
+	MySQL Host:     <input type="text" name="mysqlHost"><br>
+	MySQL Username: <input type="text" name="mysqlUsername"><br>
+    Password:       <input type="password" name="mysqlPassword"><br>
+	Database Name:  <input type="text" name="databaseName"><br>
+	Table Name:		<input type="text" name="tableName"><br>
+	<br>
+	<input type="radio" name="uploadOrDownload" value="uploadToGoogle">Upload To Google<br>
+	<input type="radio" name="uploadOrDownload" value="downloadToMysql">Download To MySQL<br>
+	<input type="submit"><br>
+</form>
+
+</body>
+</html>
